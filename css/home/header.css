@@ -1,0 +1,65 @@
+.fundo {
+  background: #3c5b29;
+}
+
+.fundo-img-header {
+  background: url("../../img/fundos/the_good_place.png") no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  height: 100%;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+.menu-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.menu-header a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.menu-header a:hover {
+  color: #fff500;
+  transition: 0.3s;
+}
+
+@media (max-width: 850px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu-header {
+    gap: 10px 5px;
+  }
+
+  .menu-header a {
+    text-decoration: none;
+    color: #b8b8b8;
+    padding: 5px 10px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+    background-color: #fff500;
+    border-radius: 4px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}

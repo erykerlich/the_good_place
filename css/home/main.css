@@ -1,0 +1,163 @@
+.main-bg {
+  background: #3c5b29;
+  padding-bottom: 200px;
+}
+
+.main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.aventuras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.curiosidade {
+  flex: 1;
+}
+
+.curiosidade h2 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.curiosidade p {
+  color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+  line-height: 1rem;
+  margin-bottom: 20px;
+}
+
+.curiosidade a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1d4108;
+  padding: 20px 40px;
+  background: #fff500;
+  display: block;
+  max-width: max-content;
+  font-weight: bold;
+}
+
+.curiosidade a:hover {
+  background: #c9c301;
+}
+
+.aventuras img {
+  max-width: 430px;
+}
+
+.assita {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.onde-assistir h3 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.onde-assistir p {
+  color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1400px) {
+  .curiosidade h2 {
+    font-size: 1.2rem;
+  }
+
+  .curiosidade p {
+    font-size: 0.7rem;
+  }
+
+  .curiosidade a {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .assita {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #michell {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aventuras {
+    justify-content: center;
+  }
+
+  .curiosidade {
+    flex: auto;
+    justify-items: c;
+  }
+
+  .curiosidade h2 {
+    text-align: center;
+  }
+  .curiosidade {
+    text-align: center;
+  }
+
+  .curiosidade a {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aventuras img {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .assita {
+    padding: 10px 10px;
+    gap: 5px;
+  }
+
+  #sair {
+    display: none;
+  }
+
+  .onde-assistir h3 {
+    font-size: 1rem;
+  }
+
+  .onde-assistir p {
+    font-size: 0.875rem;
+  }
+}

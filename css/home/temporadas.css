@@ -1,0 +1,117 @@
+.temporadas {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.temporadas h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.elenco {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+  margin-bottom: 50px;
+}
+
+.elenco img {
+  width: 200px;
+  height: 307px;
+}
+
+.banner-temporadas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.number-temp {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.number-temp img {
+  width: 205px;
+  max-height: 307px;
+}
+
+.number-temp h4 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.number-temp p {
+  color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+  line-height: 1rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+  .elenco {
+    justify-content: center;
+  }
+
+  .banner-temporadas {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-temporadas {
+    grid-template-columns: 1fr;
+  }
+
+  .number-temp:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 800px) {
+  .temporadas {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .temporadas {
+    padding: 10px 10px;
+  }
+
+  .elenco img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .number-temp img {
+    width: 155px;
+    max-height: 307px;
+  }
+
+  .temporadas h3 {
+    font-size: 1.5rem;
+  }
+
+  .number-temp h4 {
+    font-size: 1.2rem;
+  }
+
+  .number-temp p {
+    font-size: 0.755rem;
+  }
+}

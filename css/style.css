@@ -1,0 +1,7 @@
+@import "./global/global.css";
+@import "./home/header.css";
+@import "./home/introducao.css";
+@import "./home/main.css";
+@import "./home/temporadas.css";
+@import "./home/footer.css";
+@import "./utilidades/animcao.css";
